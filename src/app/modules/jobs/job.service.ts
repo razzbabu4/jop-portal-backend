@@ -1,8 +1,8 @@
 import { Job } from "./job.model";
 import { TJob } from "./jobs.interface";
 
-const createJobIntoDB = async (jobData: TJob): Promise<TJob> => {
-    const result = await Job.create(jobData);
+const createJobIntoDB = async (payload: TJob): Promise<TJob> => {
+    const result = await Job.create(payload);
     return result;
 };
 
